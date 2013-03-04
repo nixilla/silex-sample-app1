@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Contact us</h1>
+
+<form action="/index_dev.php/contact" method="post" novalidate>
+    {{ form_widget(form) }}
+
+    <input type="submit" name="submit" />
+</form>
+
+{% endblock %}
